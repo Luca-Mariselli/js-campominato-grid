@@ -2,7 +2,6 @@
 function creaQuad(numero){
     quadrato = document.createElement(`div`);
     quadrato.classList.add(`quadrato`)
-    quadrato.innerText = numero
     griglia.append(quadrato)
 }
 
