@@ -18,10 +18,37 @@ let griglia = document.getElementById(`griglia`)
 let quadrato;
 
 // creo pulsante avvia gioco
-let avvio = document.getElementById(`avvio`)
+// modalita easy
+let avvioEz = document.getElementById(`avvioEz`)
 
-avvio.addEventListener(`click`, function(){
+avvioEz.addEventListener(`click`, function(){
     for (let i=1; i <= 100; i++) {
+        let creazione = creaQuad(i)
+        let aggClasse = cliccati(quadrato, i)
+    }
+
+})
+
+
+// modalita medium
+let avvioMd = document.getElementById(`avvioMd`)
+
+avvioMd.addEventListener(`click`, function(){
+    griglia.style.width = `900px` 
+    for (let i=1; i <= 81; i++) {
+        let creazione = creaQuad(i)
+        let aggClasse = cliccati(quadrato, i)
+    }
+
+})
+
+
+// modalita hard
+let avvioHs = document.getElementById(`avvioHd`)
+
+avvioHd.addEventListener(`click`, function(){
+    griglia.style.width = `700px` 
+    for (let i=1; i <= 49; i++) {
         let creazione = creaQuad(i)
         let aggClasse = cliccati(quadrato, i)
     }

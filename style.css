@@ -34,9 +34,21 @@ h1{
     background-color: crimson;
 }
 
-#avvio{
+.bottoni{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#avvioEz,
+#avvioMd,
+#avvioHd{
     width: 8rem;
     height: 4rem;
-    margin-left: 46%;
     margin-bottom: 2rem;
+    background-color: aqua;
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
 }
