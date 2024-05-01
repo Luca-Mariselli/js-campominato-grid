@@ -24,11 +24,6 @@ avvio.addEventListener(`click`, function(){
     for (let i=1; i <= 100; i++) {
         let creazione = creaQuad(i)
         let aggClasse = cliccati(quadrato, i)
-        // // aggiungo eventlistener 
-        // quadrato.addEventListener(`click`, function () {
-        //     console.log(`hai cliccato sul quadrato ${i}`)
-        //     this.classList.toggle(`background`)
-        // })
     }
 
 })
