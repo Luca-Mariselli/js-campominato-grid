@@ -13,7 +13,12 @@ function cliccati(elemento, numero){
     })
 }
 
-// creo ciclo per iniettare quadrati in pagina
+// // creo funzione per svuotare griglia
+// function clearBox(elementID)
+// {
+//     document.getElementById(elementID).innerHTML = null;
+// }
+
 let griglia = document.getElementById(`griglia`)
 let quadrato;
 
@@ -22,6 +27,10 @@ let quadrato;
 let avvioEz = document.getElementById(`avvioEz`)
 
 avvioEz.addEventListener(`click`, function(){
+    if(griglia.innerHTML != null){
+        griglia.innerHTML = null
+    }
+    griglia.style.width = `1000px`
     for (let i=1; i <= 100; i++) {
         let creazione = creaQuad(i)
         let aggClasse = cliccati(quadrato, i)
@@ -34,6 +43,9 @@ avvioEz.addEventListener(`click`, function(){
 let avvioMd = document.getElementById(`avvioMd`)
 
 avvioMd.addEventListener(`click`, function(){
+    if(griglia.innerHTML != null){
+        griglia.innerHTML = null
+    }
     griglia.style.width = `900px` 
     for (let i=1; i <= 81; i++) {
         let creazione = creaQuad(i)
@@ -47,6 +59,9 @@ avvioMd.addEventListener(`click`, function(){
 let avvioHs = document.getElementById(`avvioHd`)
 
 avvioHd.addEventListener(`click`, function(){
+    if(griglia.innerHTML != null){
+        griglia.innerHTML = null
+    }
     griglia.style.width = `700px` 
     for (let i=1; i <= 49; i++) {
         let creazione = creaQuad(i)
